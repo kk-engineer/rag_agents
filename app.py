@@ -28,7 +28,7 @@ def init_rag():
     else:
         vectorstore = Chroma(persist_directory=DB_DIR, embedding_function=embeddings)
 
-    llm = ChatOllama(model=MODEL_TAG, temperature=0.1, num_ctx=2048)
+    llm = ChatOllama(model=MODEL_TAG, temperature=0.1, num_ctx=4096)
     prompt = ChatPromptTemplate.from_template("""
     Answer the question using the detailed context below, provide a thorough, insightful, and comprehensive answer. 
     Connect different ideas from the context to explain the 'why' behind the concepts.
