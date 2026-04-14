@@ -19,7 +19,7 @@ This project is optimized for the Llama 3.1 8B Instruct (Q4_K_M) model.
 Once Ollama is installed, pull and run the specific quantized version:
 
 ```bash
-# Pull the model (this may take some time, 10-15 mins (max))
+# Pull the model (this may take some time, depends on your internet speed)
 ollama run llama3.1:8b-instruct-q4_K_M
 
 # Run the model (keep it running for RAG to work)
