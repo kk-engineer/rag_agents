@@ -2,17 +2,11 @@
 A simple implementation of Retrieval-Augmented Generation (RAG) using local LLMs and intelligent agents. 
 This project focuses on building autonomous systems capable of retrieving relevant context from private pdf document to provide accurate, grounded responses.
 
-# 🚀 Getting Started
+# 1. Getting Started 🚀
 1. Install Ollama
 Before running the project, you must have Ollama installed to manage your local LLMs.
 
-- For macOS/Linux:
-```bash
-curl -fsSL https://ollama.com/install.sh | sh
-```
-
-- For Windows:
-Download the installer from the [Ollama website](https://ollama.com/download/windows).
+- [Download Ollama](https://ollama.com/download/).
 
 # 2. Set Up the Model
 This project is optimized for the Llama 3.1 8B Instruct (Q4_K_M) model. 
@@ -33,8 +27,8 @@ git clone https://github.com/kk-engineer/rag_agents.git
 cd rag_agents
 
 # Create a virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+python -m venv .venv
+source .venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
